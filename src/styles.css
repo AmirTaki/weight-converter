@@ -35,3 +35,7 @@ body {
     color: darkgreen;
     outline: none;
 }
+
+.error{
+    color: red;
+}
