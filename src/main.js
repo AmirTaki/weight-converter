@@ -14,6 +14,8 @@ const updataResults = () => {
         }, 2000)
     }
     else {
-
+        
     }
 }
+
+inputEl.addEventListener("input", updataResults);
