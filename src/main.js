@@ -8,6 +8,10 @@ const updataResults = () => {
     if(inputEl.value <= 0 || isNaN(inputEl.value)){
         errorEl.innerText = "Please enter a valid number!";
         clearTimeout(errorTime);
+        errorTime = setTimeout(()=> {
+            errorEl.innerText = "";
+            inputEl.value = ""
+        }, 2000)
     }
     else {
 
