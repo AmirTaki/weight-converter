@@ -16,6 +16,10 @@ const updataResults = () => {
     else {
         resultEl.innerText = (+inputEl.value / 2.2).toFixed(2)
         clearTimeout(reusltTime)
+        reusltTime = setTimeout(()=> {
+            resultEl.innerText = "";
+            inputEl.value = ""
+        }, 10000)
     }
 }
 
