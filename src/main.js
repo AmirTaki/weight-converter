@@ -14,7 +14,8 @@ const updataResults = () => {
         }, 2000)
     }
     else {
-        
+        resultEl.innerText = (+inputEl.value / 2.2).toFixed(2)
+        clearTimeout(reusltTime)
     }
 }
 
